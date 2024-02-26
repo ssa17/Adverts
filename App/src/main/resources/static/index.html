@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Favourite Cars Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <section class="home-header">
+            <nav>
+                <a href="index.html" class="home-home">Home</a>
+                <div class="home-nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Adverts</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Favourite cars</h1>
+                <p>
+                    This site will be a place where I can save some of my favourite
+                    cars.
+                </p>
+                <a href="adverts.html" class="hero-btn">Click here to view!</a>
+            </div>
+        </section>
+
+        <!-----javscript for menu----->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
