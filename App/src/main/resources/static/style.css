@@ -160,10 +160,10 @@ nav .fa {
     .text-box h1 {
         font-size: 20px;
     }
-    .home-nav-links ul li {
+    #navLinks ul li {
         display: block;
     }
-    .home-nav-links {
+    #navLinks {
         position: absolute;
         background: #f44336;
         height: 100vh;
@@ -181,7 +181,7 @@ nav .fa {
         font-size: 22px;
         cursor: pointer;
     }
-    .home-nav-links ul {
+    #navLinks ul {
         padding: 30px;
     }
 }
