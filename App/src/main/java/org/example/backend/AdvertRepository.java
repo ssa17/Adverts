@@ -1,14 +1,22 @@
 package org.example.backend;
 
+import jakarta.transaction.Transactional;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.Repository;
 
 import java.util.List;
+import java.util.UUID;
 
-public interface AdvertRepository extends Repository<Adverts, String> {
+@Transactional
+public interface AdvertRepository extends CrudRepository<Advert, UUID> {
 
-    List<Adverts> findAll();
+    List<Advert> findAll();
 
-    Adverts findByNameAndLinkAllIgnoringCase(String name, String link);
+    List<Advert> findByNameContainingAllIgnoringCase(String name);
+
+    Advert save(Advert advert);
+
+    String deleteAdvertsById(UUID advertId);
 
 }
 

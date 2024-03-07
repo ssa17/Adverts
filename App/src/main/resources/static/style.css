@@ -37,7 +37,7 @@ nav {
     content: "";
     width: 0%;
     height: 3px;
-    background: #f44336;
+    background: #8a8a8a;
     display: block;
     margin: auto;
     transition: 0.3s;
@@ -56,7 +56,7 @@ nav {
     content: "";
     width: 0%;
     height: 3px;
-    background: #f44336;
+    background: #8a8a8a;
     display: block;
     margin: auto;
     transition: 0.3s;
@@ -83,7 +83,7 @@ nav {
     content: "";
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #8a8a8a;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -110,7 +110,7 @@ nav {
     content: "";
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #8a8a8a;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -147,13 +147,17 @@ nav {
     cursor: pointer;
 }
 .hero-btn:hover {
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #8a8a8a;
+    background: #8a8a8a;
     transition: 1s;
 }
 
 nav .fa {
     display: none;
+}
+
+advert-table, th, td {
+    border: 1px solid black;
 }
 
 @media (max-width: 700px) {
@@ -165,7 +169,7 @@ nav .fa {
     }
     #navLinks {
         position: absolute;
-        background: #f44336;
+        background: #8a8a8a;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -228,7 +232,7 @@ h3 {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 #GTR {
-    background-image: url(../../../../../Frontend/images/Nissan_Skyline.jpg);
+    background-image: url(images/Nissan_Skyline.jpg);
     min-height: 100%;
     width: 100%;
     background-position: center;
@@ -236,7 +240,7 @@ h3 {
     position: relative;
 }
 #RX7 {
-    background-image: url(../../../../../Frontend/images/Mazda_RX7.jpg);
+    background-image: url(images/Mazda_RX7.jpg);
     min-height: 100%;
     width: 100%;
     background-position: center;
@@ -244,7 +248,7 @@ h3 {
     position: relative;
 }
 #Supra {
-    background-image: url(../../../../../Frontend/images/Toyota_Supra.jpg);
+    background-image: url(images/Toyota_Supra.jpg);
     min-height: 100%;
     width: 100%;
     background-position: center;

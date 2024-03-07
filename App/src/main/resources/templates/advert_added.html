@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Add adverts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Advert added</h1>
+<p th:text="'name: ' + ${advert.name}" />
+<p th:text="'link: ' + ${advert.link}" />
+<a href="/adverts">Back to adverts</a>
+</body>
+</html>

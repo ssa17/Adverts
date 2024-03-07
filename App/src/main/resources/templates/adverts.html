@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of favourite cars</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+
+<nav>
+    <a href="/index.html" class="home-adverts">Home</a>
+    <div class="adverts-nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="/adverts">Adverts</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<div>
+    <h1>Adverts</h1>
+    <form th:action="@{/adverts}" method="get">
+        <input type="text" id="advert-search-input" th:name="name" placeholder="Search by name"/>
+        <button type="submit">Submit</button>
+        <button type="button" onclick="window.location.href='/adverts'">Reset</button>
+
+    </form>
+
+    <table class="adverts-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Link</th>
+            </tr>
+            </thead>
+        <tbody>
+        <tr th:each="advert: ${adverts}">
+            <td th:text="${advert.id}" />
+            <td th:text="${advert.name}" />
+            <td /><a th:href="@{${advert.link}}" target="_blank">View Advert</a><td/>
+            <td>
+                <a th:href="@{/delete_advert(id=${advert.id})}" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+<div>
+        <button onclick="window.location.href='/add-advert'">Add Advert</button>
+</div>
+
+<script>
+    const navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
