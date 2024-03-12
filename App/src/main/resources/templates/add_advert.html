@@ -2,11 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Add an advert</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
             href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
             rel="stylesheet"
@@ -29,10 +29,12 @@
 </nav>
 <h1>Add an advert</h1>
 <form action="#" th:action="@{/add_advert}" th:object="${advert}" method="post">
-    <label>Name:<input type="text" th:field="*{name}" /></label><br>
-    <label>Link:<input type="text" th:field="*{link}" /></label><br>
-    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    <label>Name:<input type="text" th:field="*{name}"/></label><br>
+    <label>Link:<input type="text" th:field="*{link}"/></label><br>
+    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
 </form>
-<a href="adverts"><button>Cancel</button></a>
+<a href="adverts">
+    <button>Cancel</button>
+</a>
 </body>
 </html>

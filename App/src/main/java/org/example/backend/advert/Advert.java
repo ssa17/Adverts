@@ -1,6 +1,7 @@
-package org.example.backend;
+package org.example.backend.advert;
 
 import jakarta.persistence.*;
+import org.example.backend.user.User;
 
 import java.io.Serializable;
 import java.util.UUID;
@@ -11,15 +12,17 @@ public class Advert implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    public UUID id;
+    private UUID id;
 
     @Column(nullable = false)
-    public String name;
+    private String name;
 
-    @Column()
-    public String link;
+    @Column(nullable = false)
+    private String link;
 
-    // ... additional members, often include @OneToMany mappings
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
     protected Advert() {
         // no-args constructor required by JPA spec
@@ -43,15 +46,21 @@ public class Advert implements Serializable {
         this.name = name;
     }
 
-    public void setLink(String link) {
-        this.link = link;
-    }
-
     public String getLink() {
         return this.link;
     }
 
-    // ... etc
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
 }
 

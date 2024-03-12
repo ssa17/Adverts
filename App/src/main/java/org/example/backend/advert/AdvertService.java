@@ -1,5 +1,7 @@
-package org.example.backend;
+package org.example.backend.advert;
 
+import org.example.backend.advert.Advert;
+import org.example.backend.advert.AdvertRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,10 +15,6 @@ class AdvertService {
     public AdvertService(AdvertRepository advertRepository) {
         this.advertRepository = advertRepository;
     }
-
-//    public List<Adverts> home() {
-//
-//    }
 
     public List<Advert> getAllAdverts() {
         return advertRepository.findAll();

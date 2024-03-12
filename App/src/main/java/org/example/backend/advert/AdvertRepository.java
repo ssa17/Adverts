@@ -1,8 +1,8 @@
-package org.example.backend;
+package org.example.backend.advert;
 
 import jakarta.transaction.Transactional;
+import org.example.backend.advert.Advert;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.Repository;
 
 import java.util.List;
 import java.util.UUID;
