@@ -4,7 +4,7 @@
     <title>Add an advert</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/add_adverts_style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
@@ -31,10 +31,11 @@
 <form action="#" th:action="@{/add_advert}" th:object="${advert}" method="post">
     <label>Name:<input type="text" th:field="*{name}"/></label><br>
     <label>Link:<input type="text" th:field="*{link}"/></label><br>
-    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+    <p>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+        <a href="adverts" class="cancel-btn"><button>Cancel</button></a>
+    </p>
 </form>
-<a href="adverts">
-    <button>Cancel</button>
-</a>
 </body>
 </html>

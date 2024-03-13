@@ -1,0 +1,241 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+.home-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.adverts-nav-links {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    nav .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .adverts-nav-links {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        padding: 10px;
+        text-align: right;
+    }
+
+    .adverts-nav-links ul {
+        list-style: none;
+    }
+
+    .adverts-nav-links ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.home-nav-links {
+    text-align: right;
+}
+
+.home-nav-links ul {
+    list-style: none;
+}
+
+.home-nav-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #8a8a8a;
+    background: #8a8a8a;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+.adverts-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.adverts-table th,
+.adverts-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.adverts-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.adverts-table td {
+    background-color: #f9f9f9;
+}
+
+.adverts-table a.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adverts-table a.button:hover {
+    background-color: #c82333;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+#advert-search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#advert-search-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.adverts-search-btn,
+.add-advert-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adverts-search-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.adverts-search-btn:hover {
+    background-color: #0056b3;
+}
+
+.add-advert-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.add-advert-btn:hover {
+    background-color: #218838;
+}
