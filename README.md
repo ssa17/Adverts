@@ -15,5 +15,3 @@ I've created 3 UML diagrams
 The video for the project is in the link below
 https://youtu.be/7qEdnWgZeFs
 
-
-
