@@ -3,14 +3,14 @@ https://trello.com/invite/b/G0cY2ngS/ATTI3f93ac5260e012d23c007918f72d8feb208F544
 
 I've created 3 UML diagrams
 
-sequence diagram
-![](/Users/Syed.Ahmed/Downloads/ADA/Full Stack App/Diagrams/sequence diagram.png)
+# Sequence diagram
+![](/Users/Syed.Ahmed/Downloads/ADA/Adverts/App/src/main/resources/static/images/sequence diagram.png)
 
-class diagram
-![](/Users/Syed.Ahmed/Downloads/ADA/Full Stack App/Diagrams/class diagram.png)
+# Class diagram
+![](/Users/Syed.Ahmed/Downloads/ADA/Adverts/App/src/main/resources/static/images/class diagram.png)
 
-Flow diagram
-![](/Users/Syed.Ahmed/Downloads/ADA/Full Stack App/Diagrams/flow diagram.png)
+# Flow diagram
+![](/Users/Syed.Ahmed/Downloads/ADA/Adverts/App/src/main/resources/static/images/flow diagram.png)
 
 The video for the project is in the link below
 https://youtu.be/7qEdnWgZeFs
